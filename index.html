@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Play Music</title>
+</head>
+<body>
+<div class="container">
+    <div class="player">
+        <div class="cover">
+            <img src="arbol.jpg"active alt="album" id="cover">
+       </div>
+        <h2 class="player_artist">PAPANOEL</h2>
+        <h3 class="player_song">FELIZ NAVIDAD</h3>
+        <audio class="player_audio" controls id="audio">
+            <source src="Feliz Navidad.mp3" type="audio/mpeg">
+        </audio>
+            <div class="player_btn" id="play">
+                <i class="fas fa-play play-btn"></i>
+                <i class="fas fa-pause pause-btn hide"></i>
+            </div>
+
+            <input type="range" value="20" min="0" class="player level" />
+
+            <div class="audio-duration">
+                <div class="start">00:01</div>
+                <div class="end">04:30</div>
+            </div>
+
+            <audio class="player_audio" controla id="audio">
+                <source src="Feliz Navidad.mp3" type="audio/mpeg"/>
+            </audio>
+
+            <div class="player_controls">
+                <div class="player_btn player_btn--medium">
+                    <i class="fas fa-backward"></i>
+                </div>
+
+                <div class="player_btn player_btn--medium blue">
+                    <i class="fas fa-play play-btn"></i>
+                    <i class="fas fa-pause pause-btn hide"></i>
+                </div>
+
+                <div class="player_btn player_btn--medium">
+                    <i class="fas fa-farward"></i>
+                </div>
+
+
+
+    </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="funciones.js"></script>    
+</body>
+</html>
